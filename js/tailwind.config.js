@@ -9,6 +9,7 @@ tailwind.config = {
           headerc: '#a200ff',
           header2c : '#005ec7',
           navcolor: '' ,
+          perac: '#aaaaaa',
         },
         backgroundImage: {
             
