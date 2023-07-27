@@ -11,7 +11,9 @@ tailwind.config = {
           navcolor: '' ,
           perac: '#aaaaaa',
           ggray: '#dce0e3d9',
-          pera:'rgba(0,0,0,.6)'
+          pera:'rgba(0,0,0,.6)',
+          itemcolor1: 'rgba(0,94,199,.85)',
+          itemcolor2: 'rgba(162,0,255,.8)',
         },
         backgroundImage: {
             
