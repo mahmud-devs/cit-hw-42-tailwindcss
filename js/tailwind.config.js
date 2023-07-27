@@ -21,7 +21,7 @@ tailwind.config = {
           
         },
         boxShadow: {
-          'shadow': '0 0px 45px 0px rgb(0 0 0 / 0.25)',
+          'shadow': '0 0px 25px 0px rgb(0 0 0 / 0.25)',
         },
       },
     },
