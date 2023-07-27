@@ -16,7 +16,7 @@ tailwind.config = {
           itemcolor2: 'rgba(162,0,255,.8)',
         },
         backgroundImage: {
-            
+          'teambg': " linear-gradient(135deg,rgba(0,94,199,.85),rgba(162,0,255,.8)) ,url('./images/teambg.jpg') ",
         },
       },
     },
