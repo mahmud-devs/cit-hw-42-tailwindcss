@@ -9,7 +9,7 @@ tailwind.config = {
           headerc: '#a200ff',
           header2c : '#005ec7',
           navcolor: '' ,
-          perac: '#aaaaaa',
+          perac: '#666666',
           ggray: '#dce0e3d9',
           pera:'rgba(0,0,0,.6)',
           itemcolor1: 'rgba(0,94,199,.85)',
