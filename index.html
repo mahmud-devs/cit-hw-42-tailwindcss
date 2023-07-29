@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.config.js"></script>
 </head>
 <body>
     <!-- -----------------header start here----------------------- -->
-    <header class=" py-[10px]  bg-gradient-to-tl from-headerc to-header2c">
+    <header class=" py-[5px] sm:py-[10px]  bg-gradient-to-tl from-headerc to-header2c">
         <div class="max-w-container mx-auto">
-            <div class="flex justify-between items-center">
-                <div class="text-white font-medium">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="#">Call Us +1 (800) 333 44 55</a>
+            <div class="flex px-[20px] justify-between items-center">
+                <div class="text-white flex items-center font-medium">
+                    <a href="tel:+1 (800) 333 44 55">
+                        <i class="fa-solid fa-phone pr-[5px]"></i>
+                    </a>
+                    
+                    <a class=" hidden sm:block" href="tel:+1 (800) 333 44 55"></i>Call Us +1 (800) 333 44 55</a>
                 </div>
                 <div class="flex text-white gap-x-[25px] text-[18px] ">
                     <a class=" ease-linear duration-100 hover:scale-125" href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -30,7 +34,7 @@
 
     <!-- -------------------------nav start here------------------------------- -->
 
-    <nav class="py-[20px] shadow-lg shadow-gray-500/50">
+    <!-- <nav class="py-[20px] shadow-lg shadow-gray-500/50">
         <div class="max-w-container mx-auto">
             <div class="flex justify-between items-center">
                 <div>
@@ -58,13 +62,52 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+
+    <nav class="bg-white border-gray-200 shadow-lg shadow-gray-500/50 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-4">
+          <a href="https://flowbite.com/" class="flex items-center">
+            <img class="  w-[120px] sm:w-[150px]" src="images/logooo.png" alt="img">
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  " aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
 
+
+
+
     <!-- -------------------------nav end here------------------------------- -->
+
+    
     
     <!-- --------------------------------banner start here---------------- -->
     
-    <section>
+    <!-- <section>
         <div class="max-w-container mx-auto">
             <div class="flex">
                 <div class=" pt-[120px] pb-[160px] w-[50%] ">
@@ -85,7 +128,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- ----------------------------------banner end here------------------- -->
@@ -93,7 +136,7 @@
 
     <!-- ---------------------------service start here------------------ -->
 
-    <section class="py-[100px] bg-gradient-to-tl from-headerc to-header2c ">
+    <!-- <section class="py-[100px] bg-gradient-to-tl from-headerc to-header2c ">
         <div class="max-w-container mx-auto">
             <div class="flex gap-[60px] flex-wrap">
                 <div class="w-[30%]">
@@ -119,12 +162,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ------------------------------service end here----------------------------- -->
 
     <!-- --------------------------about start here------------------------------ -->
-
+<!-- 
     <section class="py-[120px]">
         <div class="max-w-container mx-auto">
             <div class="flex items-center ">
@@ -145,13 +188,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ------------------------------about end here--------------------------------- -->
 
     <!-- ------------------------------service start here ------------------------ -->
 
-    <section class="py-[130px] bg-ggray">
+    <!-- <section class="py-[130px] bg-ggray">
         <div class="max-w-container mx-auto">
             <div class="text-center">
                 <p class="inline-block relative mb-[50px] before:absolute before:bg-gradient-to-tl from-headerc to-header2c before:w-[50px] before:h-[3px] before:bottom-[10px] before:right-[-75px] after:absolute after:w-[50px] after:bottom-[10px] after:left-[-75px] after:h-[3px] after:bg-gradient-to-tl from-headerc to-header2c  text-[18px] uppercase text-perac font-semibold  tracking-[.25em]">OUR SERVICES</p>
@@ -216,14 +259,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- ------------------------------service end here---------------------------- -->
 
     <!-- ------------------------------project start here------------------------ -->
 
-    <section class="pt-[130px] pb-[120px]">
+    <!-- <section class="pt-[130px] pb-[120px]">
         <div class="max-w-container mx-auto">
             <div class="text-center">
                 <p class="inline-block relative mb-[40px] before:absolute before:bg-gradient-to-tl from-headerc to-header2c before:w-[50px] before:h-[3px] before:bottom-[10px] before:right-[-75px] after:absolute after:w-[50px] after:bottom-[10px] after:left-[-75px] after:h-[3px] after:bg-gradient-to-tl from-headerc to-header2c  text-[18px] uppercase text-perac font-semibold  tracking-[.25em]">OUR PROJECTS
@@ -291,14 +334,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ------------------------------project end here----------------------------- -->
 
 
     <!-- --------------------------------team start here------------------------------- -->
 
-    <section class="pt-[130px] pb-[120px] bg-teambg  bg-cover bg-no-repeat bg-center ">
+    <!-- <section class="pt-[130px] pb-[120px] bg-teambg  bg-cover bg-no-repeat bg-center ">
         <div class="max-w-container mx-auto">
             <div class="text-center">
                 <p class="inline-block relative mb-[40px] before:absolute before:bg-white before:w-[50px] before:h-[3px] before:bottom-[10px] before:right-[-75px] after:absolute after:w-[50px] after:bottom-[10px] after:left-[-75px] after:h-[3px] after:bg-white  text-[18px] uppercase text-white font-semibold  tracking-[.25em]">OUR TEAM
@@ -358,7 +401,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- --------------------------------team end here--------------------------------- -->
@@ -366,7 +409,7 @@
     <!-- --------------------------------client start here------------------------- -->
 
 
-    <section class="py-[130px]">
+    <!-- <section class="py-[130px]">
         <div class="max-w-container mx-auto">
             <div class="text-center">
                 <p class="inline-block relative mb-[40px] before:absolute before:bg-gradient-to-tl from-headerc to-header2c before:w-[50px] before:h-[3px] before:bottom-[10px] before:right-[-75px] after:absolute after:w-[50px] after:bottom-[10px] after:left-[-75px] after:h-[3px] after:bg-gradient-to-tl from-headerc to-header2c  text-[18px] uppercase text-perac font-semibold  tracking-[.25em]">HAPPY CLIENTS
@@ -393,14 +436,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- -----------------------------------client end here----------------------- -->
 
 
     <!-- ----------------------------------footer start here---------------------------- -->
-
+<!-- 
     <section class="py-[110px] border-t-2 border-ggray">
         <div class="max-w-container mx-auto">
             <div class="flex">
@@ -454,7 +497,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- ----------------------------------footer end here here------------------------ -->
@@ -463,7 +506,7 @@
     <!-- -------------------------------------coppy start here------------------------ -->
 
 
-    <section class=" py-[25px]  bg-gradient-to-tl from-headerc to-header2c">
+    <!-- <section class=" py-[25px]  bg-gradient-to-tl from-headerc to-header2c">
         <div class="max-w-container mx-auto">
             <div class="flex justify-between items-center">
                 <div class="text-white/[.70] font-medium text-[15px]">
@@ -475,23 +518,12 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
+    </section> -->
 
     <!-- ----------------------------------------coppy end here----------------------- -->
 
 
-
+    
 
 
 
@@ -506,6 +538,7 @@
 
 
     <script src="https://kit.fontawesome.com/eccb807151.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 
 </body>
 </html>
