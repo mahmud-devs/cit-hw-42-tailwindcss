@@ -1,9 +1,10 @@
 tailwind.config = {
     theme: {
       extend: {
-        // maxWidth: {
-        //     container: '1260px',
-        // },
+         maxWidth: {
+             container: '1260px',
+             lgcontainer : '1000px',
+        },
         colors: {
           clifford: '#da373d',
           headerc: '#a200ff',
